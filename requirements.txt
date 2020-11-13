@@ -1,0 +1,3 @@
+discord
+argparse
+# sqlite3 is in the stdlib
