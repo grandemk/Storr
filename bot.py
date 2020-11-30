@@ -17,7 +17,7 @@ def init_db(conn):
 
 class MyBot(commands.Bot):
   def __init__(self):
-      commands.Bot(command_prefix = "!")
+      super().__init__(command_prefix = "!")
 
 def main():
     args = parse_args()
