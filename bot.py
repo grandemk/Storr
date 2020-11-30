@@ -15,7 +15,7 @@ def parse_args():
 def init_db(conn):
     conn.execute("create table mappings (key integer not null primary key, value text);")
 
-class MyBot(commands.Bot)
+class MyBot(commands.Bot):
   def __init__(self):
       commands.Bot(command_prefix = "!")
 
