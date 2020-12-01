@@ -54,6 +54,10 @@ def main():
         with conn:
             conn.execute("delete from mappings where key = ?;", (key,))
 
+    @bot.command(help="<msg> Say something with the bot")
+    async def say(ctx, msg):
+        await ctx.send(msg)
+
     @bot.command(help="Liste des conférences proposées")
     async def list(ctx):
         description = ""
